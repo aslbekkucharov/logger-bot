@@ -3,7 +3,7 @@
 	"name": "logger-bot",
 	"version": "1.0.0",
 	"description": "Logger bot - Telegram bot that helps you catch errors in your application",
-	"main": "index.js",
+	"main": "./dist/index.js",
 	"scripts": {
 		"build": "tsc",
 		"tsc-watch": "tsc -w",
