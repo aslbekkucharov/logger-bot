@@ -11,6 +11,10 @@ app.get('/', (req: Request, res: Response) => {
     res.send('Server is working')
 })
 
+app.post('/send-message', (req: Request, res: Response) => {
+    res.send('Server is working')
+})
+
 app.listen(port, () => {
-    console.log(clc.greenBright('[server]:') + ' Server is running at https://localhost:' + port)
+    console.log(clc.greenBright('⚡️[server]:') + ' Server is running at https://localhost:' + port)
 })
