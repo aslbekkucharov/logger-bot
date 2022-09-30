@@ -31,3 +31,8 @@ export interface TelegramChatObject {
     description: string,
     invite_link: string
 }
+
+export interface LoggerCredentials {
+    BOT_TOKEN: string,
+    CHAT_ID: string | number
+}
