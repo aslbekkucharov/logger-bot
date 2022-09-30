@@ -17,6 +17,7 @@ export async function sendLogMessage({ message }: MessageToLog): Promise<Telegra
             text: response.text
         }
     } catch (e) {
-        throw new Error('Cannot failed to use sendMessage function')
+        console.log(e)
+        throw Error('Cannot use sendMessage function')
     }
 }

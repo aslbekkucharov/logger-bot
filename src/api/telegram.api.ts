@@ -6,13 +6,13 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 const http = createHttpClient({
-    baseURL: `https://api.telegram.org/bot${process.env.BOT_TOKEN}`
+    baseURL: `https://api.telegram.org/bot${process.env.LOGGER_BOT_TOKEN}`
 })
 
 export function sendMessage(message: string): Promise<AxiosResponse<TelegramMessageObject>> {
     return http.get('/sendMessage',  {
         params: {
-            chat_id: process.env.CHAT_ID,
+            chat_id: process.env.LOGS_CHAT_ID,
             text: message
         }
     })
