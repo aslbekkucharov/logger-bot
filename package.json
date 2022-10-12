@@ -3,7 +3,7 @@
 	"name": "logger-bot",
 	"version": "1.0.2",
 	"description": "Logger Bot - Telegram bot that helps you catch errors in your application",
-	"main": "./dist/logger.umd.js",
+	"main": "./dist/logger.es.js",
 	"module": "./dist/logger.es.js",
 	"scripts": {
 		"build": "tsc && vite build",
