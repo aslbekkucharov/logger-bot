@@ -1,6 +1,6 @@
 {
 	"type": "commonjs",
-	"name": "loggerbot",
+	"name": "logger-bot",
 	"version": "1.0.1",
 	"description": "Logger Bot - Telegram bot that helps you catch errors in your application",
 	"main": "./dist/logger.umd.js",
@@ -20,6 +20,7 @@
 	"devDependencies": {
 		"@types/node": "^18.7.23",
 		"concurrently": "^7.4.0",
+		"dotenv": "^16.0.3",
 		"nodemon": "^2.0.20",
 		"vite": "^3.1.4"
 	},

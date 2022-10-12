@@ -1,3 +1,4 @@
+import { AxiosResponse } from 'axios';
 export interface MessageToLog {
     message: string
 }
@@ -33,6 +34,6 @@ export interface TelegramChatObject {
 }
 
 export interface LoggerCredentials {
-    BOT_TOKEN: string,
-    CHAT_ID: string | number
+    BOT_TOKEN: string | undefined
+    CHAT_ID: string | number | undefined
 }
